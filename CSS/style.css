@@ -1,0 +1,119 @@
+:root {
+  --primary-color-1: hsl(0, 78%, 62%);
+  --primary-color-2: hsl(180, 62%, 55%);
+  --primary-color-3: hsl(34, 97%, 64%);
+  --primary-color-4: hsl(212, 86%, 64%);
+  --neutral-color-1: hsl(234, 12%, 34%);
+  --neutral-color-2: hsl(212, 6%, 44%);
+  --neutral-color-3: hsl(0, 0%, 100%);
+  --neutral-color-4: hsl(0, 0%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body {
+  padding: 40px 20px;
+  background: var(--neutral-color-4);
+}
+
+.font-lg {
+  font-size: 2rem;
+  line-height: 1;
+}
+.font-md {
+  font-size: 2rem;
+  line-height: 1;
+}
+.font-sm {
+  font-size: 0.8rem;
+}
+.text-bold {
+  font-weight: 600;
+}
+.text-regular {
+  font-weight: 400;
+}
+.text-thinner {
+  font-weight: 200;
+}
+.text-color-1 {
+  color: var(--neutral-color-1);
+}
+.text-color-2 {
+  color: var(--neutral-color-2);
+}
+.text-color-3 {
+  color: var(--neutral-color-3);
+}
+.border-top {
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-radius: 5px;
+}
+.border-cyan {
+  border-color: var(--primary-color-2);
+}
+.border-red {
+  border-color: var(--primary-color-1);
+}
+.border-yellow {
+  border-color: var(--primary-color-3);
+}
+.border-blue {
+  border-color: var(--primary-color-4);
+}
+.main-title,
+.subtitle,
+.body-text {
+  text-align: center;
+}
+.main-title {
+  margin-bottom: 1rem;
+}
+.subtitle {
+  margin-bottom: 1rem;
+}
+.generic-container {
+  margin-bottom: 80px;
+}
+.body-text {
+  margin: 0 auto;
+  max-width: 55ch;
+}
+.features-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media (min-width: 1150px) {
+  .features-section {
+    flex-direction: row;
+  }
+}
+.features-section-middle-container {
+  display: grid;
+  gap: 30px;
+}
+.card {
+  background: var(--neutral-color-3);
+  max-width: 340px;
+  min-width: 260px;
+  padding: 1.5rem 2rem 3rem 2rem;
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+}
+.card-body-text {
+  margin-bottom: 3rem;
+}
+.card-icon {
+  justify-self: end;
+}
